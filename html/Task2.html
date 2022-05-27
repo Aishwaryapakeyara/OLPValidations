@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "../css/stylesheet.css"/>
+    <script src="../jquery/jquery.min.js"></script>
+    <script src = "../jquery/jquery.validate.min.js"></script>
+    <script src = "/jquery/customMethods.js"></script>
+    <script src = "../jquery/jquery1.js"></script>
+  </head>
+  <body>
+    <fieldset class="fieldset">
+    <h1 class = "line1">Customer Details</h1>
+    <hr>
+    <form class = "hover_form" name = "myform" id = "myform1" > 
+        <div class = "input">
+                <label class = "required" >Full Name </label>
+            <div class = "row">
+                    <input type="text" id="Firstname" name = "Firstname" class = "half_field">
+                    <input type="text" id="Lastname" name = "Lastname" class = "half_field "><br>
+                    <div class = "label1"><label for = "fullname">First Name</label></div>
+                    <div class = "label2"><label for = "fullname">Last Name</label></div><br>
+            </div>
+            </div>
+            <div class = "input">
+                <label class = "required">Address </label>
+            <div class = "row">
+                    <input type="text" class = "text_field" id="StreetAddress" name = "StreetAddress"  ><br><br><br>
+                    <div class = "label3"><label for = "address">Street Address</div>
+                    <input type="text" id="Address2" class = "text_field" name = "Address2" ><br><br><br>
+                    <div class = "label4"><label for = "address">Street Address Line 2</div>
+                    
+                    <input type="text" id="Address3" name = "Address3" class = "half_field" >
+                    <input type="text" id="Address4" name = "Address4" class = "half_field" >
+                    <div class = "label5"><label for = "address">City</label></div>
+                    <div class = "label6"><label for = "address">State/Province</div><br><br>
+
+                    <input type="text" id="Address5" name = "Address5" class = "text_field" >
+                    <div class = "label7"><label for = "address">Postal/ZIP code</div>
+
+            </div>
+            </div>
+            <div class = "input">
+                <label for = "phn_num" class = "required">Phone Number </label>
+            <div class = "row">
+                    <input type="tel" id="phn_num" name = "phn_num" class = "text_field" placeholder = "(000)000-0000" >
+ 
+            </div>
+            </div>
+            <div class = "input">
+                <label for = "mail_id">E-mail</label>
+                <div class = "row">
+                        <input type="text" id="mail_id" name = "mail_id" class = "text_field" placeholder = "ex: email@yahoo.com" >
+                        
+                </div> 
+            </div>
+            <div class = "input">
+                <label class = "required" for="info">How did you hear about us? </label>
+                <div class = "row">
+                    <select id = "info" name = "info">
+                        <option value="Please_Select">Please Select</option>
+                        <option value="Newspaper">Newspaper</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Magazines">Magazine</option>
+                        <option value="Others">Other(Please specify..)</option>
+                    </select>
+                </div>
+            </div>
+            <div class = "input">
+                <label for = "feedback">Feedback about us:</label>
+                <div class = "row">
+                    <textarea id = "feedback" class = "textbox" ></textarea>
+                </div>
+            </div>
+            <div class = "input">
+                <label for = "suggestions">Suggestions if any for further improvement:</label>
+                <div class = "row">
+                    <textarea id = "suggestions" class = "textbox" ></textarea>
+                </div>
+            </div>
+            <div class = "input">
+                <label for = "check_box">Will you be willing to recommend us?</label>
+                <input type = "checkbox" id = "check_box" name = "check_box" value="yes" >
+            </div>
+            <div class = "input">
+                Gender: <input type="radio" id="Male" name="gender" class = "gender" value="male" >
+                 <label for="Male">Male</label>
+                 <input type="radio" id="Female" name="gender" class = "gender" value="female" >
+                 <label for="Female">Female</label>
+                 <input type="radio" id="others" name="gender" class = "gender" value="others" >
+                 <label for="others">Others</label>
+            </div>
+            <div class = "input">
+                <p>Please give reference of any two people whom you feel: </p>
+                <table>
+                    <tr>
+                        <td id = "block1" ></td>
+                        <th><label for ="full_name">Full Name</label></th>
+                        <th><label for ="address">Address</label></th>
+                        <th><label for ="contact_no">Contact Number</lable></th>
+                    </tr>
+                    <tr>
+                        <th><label for ="first">1</label></th>
+                        <td><input class = "table_input" type = "text" id = "full_name"></td>
+                        <td><input class = "table_input" type = "text" id = "address"></td>
+                        <td><input class = "table_input" type = "text" id = "contact_no"></td>
+                    </tr>
+                    <tr>
+                        <th><label for ="second">2</label></th>
+                        <td><input class = "table_input" type = "text" id = "full_name"></td>
+                        <td><input class = "table_input" type = "text" id = "address"></td>
+                        <td><input class = "table_input" type = "text" id = "contact_no"></td>
+                    </tr>
+                </table>
+            </div><hr>
+            <input type="submit"  id = "submitform" value = "Submit"/>
+        </fieldset>
+        <div id = "table">
+            <table id = "myTable">
+                <thead>
+                    <tr>
+                        <th nowrap>First Name</th>
+                        <th nowrap>Last Name</th>
+                        <th nowrap>Street Address</th>
+                        <th nowrap>Street Address Line2</th>
+                        <th nowrap>City</th>
+                        <th nowrap>State</th>
+                        <th nowrap>Zip/Pin Code</th>
+                        <th nowrap>Phone number</th>
+                        <th nowrap>E-mail</th>
+                        <th nowrap>Heard about us</th>
+                        <th nowrap>Feedback</th>
+                        <th nowrap>Suggestions</th>
+                        <th nowrap>Recommendation</th>
+                        <th nowrap>Gender</th>
+                        <th nowrap>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        </form>
+        
+    </body>
+</html>
+
+
