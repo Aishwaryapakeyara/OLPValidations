@@ -1,0 +1,193 @@
+body{
+  background-color:rgb(200, 215, 215);
+  position: relative;
+}
+
+.text_field{
+  padding: 10px;
+  border-color: gray;
+  width: 460px;
+}
+.fieldset{
+  background-color: white;
+  width:500px;
+  left:500px;
+  position: absolute;
+  border: none;
+}
+.line1{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.required::after{
+  content: "*";
+  color: red;
+}
+.half_field{
+  padding: 10px;
+  border-color: gray;
+  width: 230px;
+}
+ input:hover{
+  border-color: rgb(19, 19, 197);
+  background-color: white;
+} 
+select:hover{
+  border-color: rgb(19, 19, 197);
+  background-color: white;
+}
+textarea:hover{
+  border-color: rgb(19, 19, 197);
+  background-color: white;
+}
+input[type = checkbox]:hover{
+  border-color: rgb(19, 19, 197);
+  background-color: white;
+}
+.textbox{
+  height: 100px;
+  width:460px;
+}
+th,td{
+  border-color:black ;
+  border: 1px solid rgb(179, 179, 227);
+  border-collapse: collapse;
+
+}
+ td:hover {
+  border-color: rgb(19, 19, 197);
+  background-color: white;
+
+} 
+th{
+  background-color: rgb(118, 167, 152);
+}
+td{
+  background-color: white;
+}
+.input{
+  padding: 20px;
+}
+.row{
+  padding-top: 10px;
+}
+.table_input{
+  padding: 10px;
+  border:none;
+  width: 150px;
+}
+#block1{
+  border:none;
+}
+
+.label1{
+  position: absolute;
+  color: darkgrey;
+}
+.label2{
+  position: absolute;
+  left:280px;
+  color: darkgrey;
+}
+
+.label3{
+  position: absolute;
+  left:30px;
+  top:350px;
+  color: darkgrey;
+}
+.label4{
+  position: absolute;
+  left:30px;
+  top:430px;
+  color: darkgrey;
+}
+.label5{
+  color: darkgrey;
+}
+.label6{
+  position: absolute;
+  left:275px;
+  top:503px;
+  color: darkgrey;
+}
+.label7{
+  color: darkgrey;
+}
+input[type = submit]{
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* .labels{
+  color:red;
+  font-size: smaller;
+} */
+label.error{
+  color:red;
+  font-size: smaller;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+ #Firstname-error{
+  position: absolute;
+  left:110px;
+}
+#Lastname-error{
+  position: absolute;
+  left:360px;
+}
+#StreetAddress-error{
+  position: absolute;
+  left:130px;
+}
+#Address2-error{
+  position: absolute;
+  left:175px;
+  top:430px;
+} 
+#Address3-error{
+  position: absolute;
+  left:70px;
+}
+#Address4-error{
+  position:absolute;
+  left:380px;
+}
+#Address5-error{
+  position: absolute;
+  left:150px;
+}
+#gender-error{
+  position: absolute;
+}
+.datafetch{
+  text-align: center;
+}
+
+.updatebtn{
+  text-align: center;
+  background-color: rgb(107, 107, 229);
+  font-size: 15px;
+  border: none;
+}
+
+.deletebtn{
+  text-align: center;
+  background-color: rgb(187, 32, 32);
+  font-size: 15px;
+  border: none;
+}
+#table{
+  position: absolute;
+  top:1688px;
+  left:150px;
+
+}
